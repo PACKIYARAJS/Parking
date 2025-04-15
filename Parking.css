@@ -1,0 +1,120 @@
+h1{
+
+    text-align: center;
+
+}
+
+.box{
+
+    position: absolute;
+
+    width: 200px;
+
+    height: 300px;
+
+    border: 2px solid black;
+
+    background-color: green;
+
+}
+
+#slot1{
+
+    margin-left: 150px;
+
+}
+
+#slot2{
+
+    margin-left: 350px;
+
+}
+
+#slot3{
+
+    margin-left: 550px;
+
+}
+
+#slot4{
+
+    margin-left: 750px;
+
+}
+
+#slot5{
+
+    margin-left: 950px;
+
+}
+
+#slot6{
+
+    margin-top: 300px;
+
+    margin-left: 150px;
+
+}
+
+#slot7{
+
+    margin-top: 300px;
+
+    margin-left: 350px;
+
+}
+
+#slot8{
+
+    margin-top: 300px;
+
+    margin-left: 550px;
+
+}
+
+#slot9{
+
+    margin-top: 300px;
+
+    margin-left: 750px;
+
+}
+
+#slot10{
+
+    margin-top: 300px;
+
+    margin-left: 950px;
+
+}
+
+.input{
+
+    text-align: center;
+
+    width: 200px;
+
+    height: 50px;
+
+    margin-top: 2%;
+
+    margin-left: 40px;
+
+}
+
+.output{
+
+    text-align: center;
+
+    width: 200px;
+
+    height: 50px;
+
+    position: absolute;
+
+    margin-top: -10.5%;
+
+    margin-left:85%;
+
+}
+
