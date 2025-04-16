@@ -21,38 +21,36 @@
 
         <h1>Car Parking</h1>
 
-        <div class="container mt-5">
+        <div class="Container Parking mt-5">
 
             <div id="slot1" class="box"></div>
             <div id="slot2" class="box"></div>
             <div id="slot3" class="box"></div>
             <div id="slot4" class="box"></div>
             <div id="slot5" class="box"></div>
+
+        </div>
+
+        <div class="Container Parking">
             <div id="slot6" class="box"></div>
             <div id="slot7" class="box"></div>
             <div id="slot8" class="box"></div>
             <div id="slot9" class="box"></div>
             <div id="slot10" class="box"></div>
-
         </div>
 
-        <div>
+           <!-- Entry -->
+    <div class="entry-btn">
+        <input type="text" class="input" id="carnum" placeholder="Car Number">
+        <input type="number" class="input" id="slotnum" placeholder="Slot Number">
+        <input type="button" onclick="carParking.Entry()" class="input btn btn-primary" value="Entry">
+    </div>
 
-            <input type="text" class="input" id="carnum" placeholder="Car Number"><br>
-
-            <input type="number" class="mt-2 input" id="slotnum" placeholder="Slot Number"><br>
-
-            <input type="button" onclick="carParking.Entry()" class="input btn btn-primary mt-2 " value="Entry">
-
-        </div>
-
-        <div>
-
-            <input type="text" class="output" id="carnum1" placeholder="Car Number"><br><br><br>
-
-            <input type="button" onclick="carParking.Exit()" class="output btn btn-primary" value="Exit">
-
-        </div>
+    <!-- Exit -->
+    <div class="exit-btn">
+        <input type="text" class="output" id="carnum1" placeholder="Car Number">
+        <input type="button" onclick="carParking.Exit()" class="output btn btn-primary" value="Exit">
+    </div>
 
     </div>
     

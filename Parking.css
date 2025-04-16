@@ -1,120 +1,60 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./image/download.jpg);
+    background-size: cover;
+    overflow: auto;
+    width: 100%;
+}
 h1{
-
+    font-weight: 600;
+    color:ghostwhite;
     text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+}
 
+.Parking{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
 }
 
 .box{
-
-    position: absolute;
-
     width: 200px;
-
     height: 300px;
-
     border: 2px solid black;
-
-    background-color: green;
-
+    background-color: transparent;
+    box-shadow: 10px 5px 10px black;
+    backdrop-filter: blur(100px);
 }
 
-#slot1{
-
-    margin-left: 150px;
-
-}
-
-#slot2{
-
-    margin-left: 350px;
-
-}
-
-#slot3{
-
-    margin-left: 550px;
-
-}
-
-#slot4{
-
-    margin-left: 750px;
-
-}
-
-#slot5{
-
-    margin-left: 950px;
-
-}
-
-#slot6{
-
-    margin-top: 300px;
-
-    margin-left: 150px;
-
-}
-
-#slot7{
-
-    margin-top: 300px;
-
-    margin-left: 350px;
-
-}
-
-#slot8{
-
-    margin-top: 300px;
-
-    margin-left: 550px;
-
-}
-
-#slot9{
-
-    margin-top: 300px;
-
-    margin-left: 750px;
-
-}
-
-#slot10{
-
-    margin-top: 300px;
-
-    margin-left: 950px;
-
+.entry-btn{
+    float: left;
+    width: 50%;
+    /* border: 2px saddlebrown solid; */
 }
 
 .input{
-
     text-align: center;
-
-    width: 200px;
-
+    width: 250px;
+    max-width: 300px;
     height: 50px;
+    margin: 10px auto;
+    display: block;    
+}
 
-    margin-top: 2%;
-
-    margin-left: 40px;
-
+.exit-btn{
+    float:left;
+    width: 50%;
+    /* border: 2px solid saddlebrown; */
 }
 
 .output{
-
     text-align: center;
-
-    width: 200px;
-
+    width: 250px;
+    max-width: 300px;
     height: 50px;
-
-    position: absolute;
-
-    margin-top: -10.5%;
-
-    margin-left:85%;
-
+    margin: 10px auto;
+    display: block;
 }
-

@@ -1,9 +1,4 @@
 class parking{
-
-    constructor(){
-
-
-    }
  
     Entry(){
 
@@ -19,7 +14,7 @@ class parking{
         var s9 = document.getElementById("slot9");
         var s10 = document.getElementById("slot10")    
         
-        this.slots = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10];
+        var slots = [s1,s2,s3,s4,s5,s6,s7,s8,s9,s10];
 
         var carnum = document.getElementById("carnum").value;
 
@@ -43,9 +38,9 @@ class parking{
 
         }
 
-        var slotval = this.slots[slotnum-1];
+        var slotval = slots[slotnum-1];
 
-        if(slotval.style.backgroundColor=="grey"){
+        if(slotval.style.backgroundColor=="green"){
 
             alert("This Slot already occupied by " + slotval.textContent);
 
@@ -53,9 +48,34 @@ class parking{
 
         }
 
-        slotval.style.backgroundColor = "grey";
+
+        for(var slot = 0; slot<slots.length; slot++)
+        {
+            if(slots[slot].textContent == carnum){
+
+                alert("This car already in parking area");
+
+                return;
+
+            }
+        }
+
+        slotval.style.backgroundColor = "green";
 
         slotval.textContent = carnum;
+
+        slotval.style.display= "flex";
+
+        slotval.style.justifyContent = "center";
+
+        slotval.style.alignItems = "center";
+
+        slotval.style.fontSize = "15px";
+
+        slotval.style.color = "white";
+
+        slotval.style.overflow = "hidden";
+
 
     }
 
@@ -91,7 +111,7 @@ class parking{
 
             if(this.slots[slot].textContent == carnum){
 
-                this.slots[slot].style.backgroundColor = "green";
+                this.slots[slot].style.backgroundColor = "";
 
                 this.slots[slot].textContent = "";
 
